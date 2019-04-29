@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Property points</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+
+
+  <!-- Google Fonts -->
+
+ <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+ 
+  <!-- Bootstrap CSS File -->
+  <link href="<?php echo base_url();?>assest/lib/mine/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="<?php echo base_url();?>assest/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>assest/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>assest/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>assest/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="<?php echo base_url();?>assest/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: EstateAgency
+    Theme URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<?php $this->load->view('header/nav.php'); ?>
+
+
+<div class="container" style="padding-top: 200px; padding-bottom: 100px;">
+  <div class="row">
+    <div class="col-md-6">
+
+  
+<form action="<?php echo base_url();?>home/check_login" method="post">
+  <fieldset>
+    <legend>Log In</legend>
+    <div class="form-group row">
+      <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="email@example.com">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control"  name="email" placeholder="Enter your email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <div class="col text-danger"> <?php echo form_error('email'); ?> 
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control"  name="password" placeholder="Password">
+       <div class="col text-danger"> <?php echo form_error('password'); ?> 
+    </div>
+   
+    
+  <div style="padding-top: 10px;">
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+     <button type="reset" class="btn btn-success">Reset</button>
+     </div>
+
+  </fieldset>
+</form>
+</div>
+    <div class="col-md-6"></div>
+
+</div>
+</div>
+
+<?php $this->load->view('header/f.php');?>
+<?php $this->load->view('header/footer.php');?>

@@ -1,0 +1,13 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond $1 !^(index\.php|img|assest|jayant|images|js|css|webfonts|uploads|robots\.txt)
+RewriteRule ^(.*)$ /index.php?/$1 [L,QSA]
+
+Options All -Indexes
+
+# BEGIN Cache-Control Headers : 1 month for most static assets : time in sec
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|ico|jpg|jpeg|png|gif|JPG|JPEG|PNG|GIF)$">
+	Header set Cache-Control "max-age=2592000, public"
+  </FilesMatch>
+</IfModule>
