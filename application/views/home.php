@@ -268,6 +268,8 @@
   </section>
   <!--/ Services End /-->
 
+
+
   <!--/ Property Star /-->
   <section class="section-property section-t8">
     <div class="container">
@@ -295,13 +297,13 @@
               <div class="card-overlay-a-content">
                 <div class="card-header-a">
                   <h2 class="card-title-a">
-                    <a href="property-single.html">206 Mount
-                      <br /> Olive Road Two</a>
+                    <a href="property-single.html"><?php print_r($posts[0]->location_name); ?> 
+                      <br /> <?php print_r($posts[0]->property_name); ?> </a>
                   </h2>
                 </div>
                 <div class="card-body-a">
                   <div class="price-box d-flex">
-                    <span class="price-a">rent | $ 12.000</span>
+                    <span class="price-a">rent | RS: <?php print_r($posts[0]->rent); ?>/m</span>
                   </div>
                   <a href="#" class="link-a">Click here to view
                     <span class="ion-ios-arrow-forward"></span>
@@ -311,21 +313,20 @@
                   <ul class="card-info d-flex justify-content-around">
                     <li>
                       <h4 class="card-info-title">Area</h4>
-                      <span>340m
-                        <sup>2</sup>
+                      <span><?php print_r($posts[0]->area); ?>m<sup>2</sup>
                       </span>
                     </li>
                     <li>
                       <h4 class="card-info-title">Beds</h4>
-                      <span>2</span>
+                      <span><?php print_r($posts[0]->beds); ?></span>
                     </li>
                     <li>
                       <h4 class="card-info-title">Baths</h4>
-                      <span>4</span>
+                      <span><?php print_r($posts[0]->bathroom); ?></span>
                     </li>
                     <li>
                       <h4 class="card-info-title">Garages</h4>
-                      <span>1</span>
+                      <span><?php print_r($posts[0]->garage); ?></span>
                     </li>
                   </ul>
                 </div>
@@ -341,14 +342,14 @@
             <div class="card-overlay">
               <div class="card-overlay-a-content">
                 <div class="card-header-a">
-                  <h2 class="card-title-a">
-                    <a href="property-single.html">157 West
-                      <br /> Central Park</a>
+                   <h2 class="card-title-a">
+                    <a href="property-single.html"><?php print_r($posts[1]->location_name); ?> 
+                      <br /> <?php print_r($posts[1]->property_name); ?> </a>
                   </h2>
                 </div>
                 <div class="card-body-a">
                   <div class="price-box d-flex">
-                    <span class="price-a">rent | $ 12.000</span>
+                    <span class="price-a">rent | RS: <?php print_r($posts[1]->rent); ?>/m</span>
                   </div>
                   <a href="property-single.html" class="link-a">Click here to view
                     <span class="ion-ios-arrow-forward"></span>
@@ -358,21 +359,20 @@
                   <ul class="card-info d-flex justify-content-around">
                     <li>
                       <h4 class="card-info-title">Area</h4>
-                      <span>340m
-                        <sup>2</sup>
+                      <span><?php print_r($posts[1]->area); ?>m<sup>2</sup>
                       </span>
                     </li>
                     <li>
                       <h4 class="card-info-title">Beds</h4>
-                      <span>2</span>
+                      <span><?php print_r($posts[1]->beds); ?></span>
                     </li>
                     <li>
                       <h4 class="card-info-title">Baths</h4>
-                      <span>4</span>
+                      <span><?php print_r($posts[1]->bathroom); ?></span>
                     </li>
                     <li>
                       <h4 class="card-info-title">Garages</h4>
-                      <span>1</span>
+                      <span><?php print_r($posts[1]->garage); ?></span>
                     </li>
                   </ul>
                 </div>
@@ -389,13 +389,13 @@
               <div class="card-overlay-a-content">
                 <div class="card-header-a">
                   <h2 class="card-title-a">
-                    <a href="property-single.html">245 Azabu
-                      <br /> Nishi Park let</a>
+                    <a href="property-single.html"><?php print_r($posts[2]->location_name); ?> 
+                      <br /> <?php print_r($posts[2]->property_name); ?> </a>
                   </h2>
                 </div>
                 <div class="card-body-a">
                   <div class="price-box d-flex">
-                    <span class="price-a">rent | $ 12.000</span>
+                       <span class="price-a">rent | RS: <?php print_r($posts[2]->rent); ?>/m</span>
                   </div>
                   <a href="property-single.html" class="link-a">Click here to view
                     <span class="ion-ios-arrow-forward"></span>
@@ -405,21 +405,20 @@
                   <ul class="card-info d-flex justify-content-around">
                     <li>
                       <h4 class="card-info-title">Area</h4>
-                      <span>340m
-                        <sup>2</sup>
+                      <span><?php print_r($posts[2]->area); ?>m<sup>2</sup>
                       </span>
                     </li>
                     <li>
                       <h4 class="card-info-title">Beds</h4>
-                      <span>2</span>
+                      <span><?php print_r($posts[2]->beds); ?></span>
                     </li>
                     <li>
                       <h4 class="card-info-title">Baths</h4>
-                      <span>4</span>
+                      <span><?php print_r($posts[2]->bathroom); ?></span>
                     </li>
                     <li>
                       <h4 class="card-info-title">Garages</h4>
-                      <span>1</span>
+                      <span><?php print_r($posts[2]->garage); ?></span>
                     </li>
                   </ul>
                 </div>
@@ -427,53 +426,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item-b">
-          <div class="card-box-a card-shadow">
-            <div class="img-box-a">
-              <img src="<?php echo base_url();?>assest/img/property-10.jpg" alt="" class="img-a img-fluid">
-            </div>
-            <div class="card-overlay">
-              <div class="card-overlay-a-content">
-                <div class="card-header-a">
-                  <h2 class="card-title-a">
-                    <a href="property-single.html">204 Montal
-                      <br /> South Bela Two</a>
-                  </h2>
-                </div>
-                <div class="card-body-a">
-                  <div class="price-box d-flex">
-                    <span class="price-a">rent | $ 12.000</span>
-                  </div>
-                  <a href="property-single.html" class="link-a">Click here to view
-                    <span class="ion-ios-arrow-forward"></span>
-                  </a>
-                </div>
-                <div class="card-footer-a">
-                  <ul class="card-info d-flex justify-content-around">
-                    <li>
-                      <h4 class="card-info-title">Area</h4>
-                      <span>340m
-                        <sup>2</sup>
-                      </span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Beds</h4>
-                      <span>2</span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Baths</h4>
-                      <span>4</span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Garages</h4>
-                      <span>1</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+     
       </div>
     </div>
   </section>

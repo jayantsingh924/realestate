@@ -4,6 +4,9 @@
 
 
 <div class="container" style="padding-top: 200px; padding-bottom: 100px;">
+	<div class="row">
+		<div class="col-md-6">
+
 <form action="<?php echo base_url();?>home/check_login" method="post">
   <fieldset>
     <legend>Log In</legend>
@@ -34,8 +37,23 @@
 
   </fieldset>
 </form>
+</div>
+<div class="col-md-6">
+  
+   <img class="img-responsive" style="width:100%; height: 100%;" src="<?php echo base_url();?>assest/img/admin.png" alt="admin"> 
+</div>
 
 </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <marquee>www.propertypoints.co.in 
+    <p><span style="color: green">Call us:
+       </span> +91-9833655868 
+       <span style="color: green">E-mail:
+       </span> contact@propertypoints.co.in </p>
+  </marquee>
+</nav>
 
 <?php $this->load->view('header/f.php');?>
 <?php $this->load->view('header/footer.php');?>

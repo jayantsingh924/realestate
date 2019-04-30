@@ -28,9 +28,10 @@
              <th>Registerd Date</th>
              <th>Action</th>
           </tr>
+              <?php $row = 0;  $sno = $row+1;  ?>
 	            <?php foreach($posts as $post){?>
      <tr>
-         <td><?php echo $post->id;?></td>
+         <td><?php echo $sno;?></td>
          <td><?php echo $post->location_name;?></td>
          <td><?php echo $post->property_name;?></td>
          <td><?php echo $post->reg_date;?></td>
@@ -44,8 +45,9 @@
 
       
 
-      </tr>     
-     <?php }?>  
+      </tr>
+        
+     <?php $sno++;   }?>  
 
       
 	     </table>

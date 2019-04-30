@@ -2,7 +2,7 @@
   <section class="section-footer">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-5">
+        <div class="col-md-5">
           <div class="widget-a">
             <div class="w-header-a">
               <h3 class="w-title-a text-brand">Property'sPoint</h3>
@@ -22,7 +22,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-3 section-md-t3">
+        <div class="col-md-3 section-md-t3">
           <div class="widget-a">
             <div class="w-header-a">
               <h3 class="w-title-a text-brand">The Company</h3>
@@ -51,7 +51,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 section-md-t3">
+        <div class="col-md-4 section-md-t3">
 
 
               <form class="form-a contactForm" action="" method="post" role="form">
@@ -116,8 +116,8 @@
             </div>
         </div>
       </div>
-    \
-  </section>
+    
+</section>
   <footer>
     <div class="container">
       <div class="row">

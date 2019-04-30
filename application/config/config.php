@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 //error_reporting(0);
-$config['base_url'] = 'http://realestate/';
+$config['base_url'] = 'http://www.propertypoints.co.in/';
 
 /*
 |--------------------------------------------------------------------------

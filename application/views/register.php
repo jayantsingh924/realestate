@@ -7,6 +7,8 @@
 
 
 <div class="container" style="padding-top: 200px; padding-bottom: 100px;">
+  <div class="row">
+    <div class="col-md-6">
 	
 <form method="post" action="<?php echo base_url();?>home/signup">
  
@@ -63,7 +65,21 @@
 
 </div>
 
+<div class="col-md-6">
+  
+   <img class="img-responsive" style="width:100%; height: 100%;" src="<?php echo base_url();?>assest/img/signup.jpg" alt="Client"> 
+</div>
+</div>
+</div>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <marquee>www.propertypoints.co.in 
+    <p><span style="color: green">Call us:
+       </span> +91-9833655868 
+       <span style="color: green">E-mail:
+       </span> contact@propertypoints.co.in </p>
+  </marquee>
+</nav>
 
 
 

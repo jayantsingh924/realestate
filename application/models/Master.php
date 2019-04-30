@@ -19,21 +19,20 @@ class Master extends CI_Model
          
          }
 
-
-      public function client_login($user_name,$password)
-         {
-       
-            $sql = $this->db->get_where('client',array('email'=>$user_name,'password'=>$password));
-            return $sql->row_array();
-         
-         }    
-
       public function addtest($add_data=NULL)
          { 
            $this->db->insert('property', $add_data);
            return $this->db->insert_id();
         }
-      public function addclient($add_data=NULL)
+        
+      public function client_login($user_name,$password)
+         {
+           $sql = $this->db->get_where('client',array('email'=>$user_name,'password'=>$password));
+            return $sql->row_array();
+         
+         } 
+        
+        public function addclient($add_data=NULL)
          { 
            $this->db->insert('client', $add_data);
            return $this->db->insert_id();

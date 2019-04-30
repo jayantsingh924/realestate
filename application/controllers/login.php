@@ -37,8 +37,8 @@ class Login extends CI_Controller {
               { 
                   if(isset($_POST['email']))
                     {            
-                      $user_data = $this->Master->check_login($_POST['email'],$_POST['password']);
-                      //print_r($user_data); die('yes');
+                      $user_data = $this->Master->client_login($_POST['email'],$_POST['password']);
+                    
                          if (!empty($user_data)) 
                           {
                             $_SESSION['ad_uid']= $user_data['id']; 
